@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schulorganizer – Alex Gaming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      color: #333;
+    }
+
+    header {
+      background-color: #00695c;
+      padding: 1rem 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      flex: 1 1 250px;
+      max-width: 280px;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #00695c;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen im Schulorganizer</h1>
+    <p>Organisiere deinen Schulalltag digital – einfach, schnell und übersichtlich.</p>
+  </header>
+
+  <main>
+    <div class="card-container">
+      <a class="card" href="https://alexgamingstudio.github.io/stundenplan/">
+        <h2>📅 Stundenplan</h2>
+        <p>Dein aktueller Wochenplan auf einen Blick.</p>
+      </a>
+
+      <a class="card" href="https://alexgamingstudio.github.io/unterricht/">
+        <h2>📘 Online-Hefte</h2>
+        <p>Greife digital auf deine Unterrichtshefte zu.</p>
+      </a>
+
+      <a class="card" href="https://alexgamingstudio.github.io/kontakt/">
+        <h2>📬 Kontakt</h2>
+        <p>Fragen oder Feedback? Hier erreichst du uns.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Alex Gaming – Schulorganizer
+  </footer>
+
+</body>
+</html>
